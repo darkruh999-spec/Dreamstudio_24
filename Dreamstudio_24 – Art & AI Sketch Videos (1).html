@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dreamstudio_24 – Art & AI Sketch Videos</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff7ee;--card:#fff;--text:#1d1a17;--mute:#6b625a;--acc:#e8590c;--acc2:#c2255c;--line:#f0dfca;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#110e0c;--card:#1c1815;--text:#f6efe6;--mute:#b0a59a;--acc:#ff8a3d;--acc2:#ff5c8a;--line:#35302b}}
+:root[data-theme="dark"]{--bg:#110e0c;--card:#1c1815;--text:#f6efe6;--mute:#b0a59a;--acc:#ff8a3d;--acc2:#ff5c8a;--line:#35302b}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;padding-bottom:84px}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:14px}
+nav b{font-family:'Playfair Display',Georgia,serif;font-size:19px}
+nav a{color:var(--mute);text-decoration:none;margin-left:14px}
+.hero{text-align:center;padding:44px 20px 40px;border-radius:28px;background:radial-gradient(circle at 20% 0%,rgba(232,89,12,.28),transparent 55%),radial-gradient(circle at 90% 100%,rgba(194,37,92,.28),transparent 55%),var(--card);border:1px solid var(--line);position:relative;overflow:hidden}
+.pill{display:inline-block;font-size:12px;letter-spacing:.18em;padding:6px 14px;border-radius:99px;border:1px solid var(--acc);color:var(--acc);font-weight:600}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(36px,10vw,64px);margin:16px 0 6px;line-height:1.05;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.q{font-family:'Playfair Display',Georgia,serif;font-style:italic;color:var(--mute);font-size:18px;margin:0 0 8px}
+.sub{margin:0 0 26px;font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.btn{display:inline-block;padding:13px 24px;border-radius:99px;text-decoration:none;font-weight:700;color:#fff;transition:transform .2s}
+.btn:active,.btn:hover{transform:translateY(-2px) scale(1.03)}
+.yt{background:#e00;box-shadow:0 6px 20px rgba(238,0,0,.35);animation:pulse 2s infinite}
+.ig{background:linear-gradient(45deg,#f9a825,#d6249f,#5851db)}
+.wa{background:#1fa855}
+@keyframes pulse{50%{box-shadow:0 6px 30px rgba(238,0,0,.65)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:22px 0 10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 6px;text-align:center}
+.stat b{display:block;font-size:22px;color:var(--acc)}
+.stat span{font-size:12px;color:var(--mute)}
+h2{font-family:'Playfair Display',Georgia,serif;font-size:30px;margin:46px 0 6px}
+.lead{color:var(--mute);margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.art{border-radius:18px;padding:22px 18px;min-height:150px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .25s}
+.art:hover{transform:translateY(-4px)}
+.art h3{margin:0;font-size:19px}.art p{margin:4px 0 0;font-size:13px;opacity:.92}
+.a1{background:linear-gradient(160deg,#e8590c,#a61e4d)}.a2{background:linear-gradient(160deg,#343a40,#111)}.a3{background:linear-gradient(160deg,#f59f00,#c2255c)}.a4{background:linear-gradient(160deg,#2b8a3e,#0b3d2e)}.a5{background:linear-gradient(160deg,#7048e8,#1c1c3c)}.a6{background:linear-gradient(160deg,#1971c2,#0b2545)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{margin:0 0 4px;font-size:17px}.card p{margin:0;color:var(--mute);font-size:14px}
+.ai{display:grid;gap:14px;background:linear-gradient(135deg,rgba(232,89,12,.14),rgba(194,37,92,.14));border:1px solid var(--line);border-radius:22px;padding:24px}
+.ai h3{font-size:22px;margin:0}
+.ai ul{margin:0;padding-left:20px;color:var(--mute)}
+.contact a.card{text-decoration:none;color:inherit;display:block;transition:transform .2s}
+.contact a.card:hover{transform:translateY(-3px);border-color:var(--acc)}
+.cta{text-align:center;margin-top:48px;padding:32px 20px;border-radius:24px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff}
+.cta h2{margin:0 0 6px;color:#fff}.cta p{margin:0 0 18px}
+.cta .btn{background:#fff;color:#c2255c}
+footer{text-align:center;color:var(--mute);font-size:13px;padding:34px 0 10px}
+.bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:8px;justify-content:center;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--line);z-index:9}
+.bar .btn{padding:11px 18px;font-size:14px;flex:1;max-width:200px;text-align:center}
+@media(max-width:520px){.stats{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Dreamstudio_24</b><div><a href="#art">Art</a><a href="#ai">AI Videos</a><a href="#contact">Contact</a></div></nav>
+
+<section class="hero">
+<span class="pill">CREATE · INSPIRE</span>
+<h1>Dreamstudio_24</h1>
+<p class="q">💖 Tu prem hai, tu hi meri preet hai 💕</p>
+<p class="sub">✏️ Hand-drawn sketches × ⚡ AI-generated sketch videos</p>
+<div class="btns">
+<a class="btn yt" href="https://www.youtube.com/@Dreamstudio__18?sub_confirmation=1">▶ Subscribe</a>
+<a class="btn ig" href="https://www.instagram.com/_dreamstudio_24">📸 Follow</a>
+</div>
+</section>
+
+<div class="stats">
+<div class="stat"><b>71+</b><span>Subscribers</span></div>
+<div class="stat"><b>30K+</b><span>Views</span></div>
+<div class="stat"><b>50+</b><span>Instagram</span></div>
+<div class="stat"><b>New</b><span>Sketch har din</span></div>
+</div>
+
+<h2 id="art">🎨 Sketch Collection</h2>
+<p class="lead">Bhakti aur kala ka sangam — har sketch dil se bana hua.</p>
+<div class="grid">
+<div class="art a1"><h3>🪶 Radha–Krishna</h3><p>Radha Rani ki colour paintings</p></div>
+<div class="art a2"><h3>🔱 Mahadev</h3><p>Har Har Mahadev pencil sketches</p></div>
+<div class="art a3"><h3>🦁 Durga Mata</h3><p>Navratri special Sherawali art</p></div>
+<div class="art a4"><h3>🙏 Hanuman Ji</h3><p>Gyaan gun sagar effects</p></div>
+<div class="art a5"><h3>👁 Eyes & Portraits</h3><p>Realistic eye aur face sketches</p></div>
+<div class="art a6"><h3>🌀 Anime Art</h3><p>Anime & cartoon style drawings</p></div>
+</div>
+
+<h2 id="ai">🤖 AI Sketch Videos</h2>
+<div class="ai">
+<h3>AI se bane sketch videos, aapke liye ⚡</h3>
+<ul>
+<li>YouTube Shorts par AI-generated sketch videos</li>
+<li>Devotional, anime aur portrait themes</li>
+<li>Custom AI prompt & video banwane ke liye contact karein</li>
+</ul>
+<div class="btns" style="justify-content:flex-start"><a class="btn wa" href="https://wa.me/918435886183?text=Hello%2C%20mujhe%20AI%20prompt%20%2F%20video%20ke%20liye%20contact%20karna%20hai">💬 Prompt & Video ke liye WhatsApp</a></div>
+</div>
+
+<h2>💛 Kyun Follow Karein?</h2>
+<div class="grid">
+<div class="card"><h3>🔥 Naya content</h3><p>Har kuch din naya sketch short.</p></div>
+<div class="card"><h3>🙏 Positive vibes</h3><p>Bhakti aur shanti bhari art.</p></div>
+<div class="card"><h3>🎬 Satisfying</h3><p>Sketch banne ka time-lapse.</p></div>
+</div>
+
+<h2 id="contact">📞 Contact & Social</h2>
+<div class="grid contact">
+<a class="card" href="https://www.youtube.com/@Dreamstudio__18"><h3>▶ YouTube</h3><p>@Dreamstudio__18</p></a>
+<a class="card" href="https://www.instagram.com/_dreamstudio_24"><h3>📸 Instagram</h3><p>@_dreamstudio_24</p></a>
+<a class="card" style="border-color:var(--acc)" href="https://wa.me/918435886183?text=Hello%2C%20mujhe%20AI%20prompt%20%2F%20video%20ke%20liye%20contact%20karna%20hai"><h3>💬 WhatsApp</h3><p>Prompt & video ke liye<br><b style="color:var(--acc)">+91 84358 86183</b></p></a>
+</div>
+
+<div class="cta">
+<h2>Art pasand aaya? 💖</h2>
+<p>Subscribe karein aur Instagram par follow karein!</p>
+<div class="btns"><a class="btn" href="https://www.youtube.com/@Dreamstudio__18?sub_confirmation=1">▶ Subscribe Now</a><a class="btn" href="https://www.instagram.com/_dreamstudio_24">📸 Follow</a></div>
+</div>
+<footer>© 2026 Dreamstudio_24 · Jay Shree Ram 🚩</footer>
+</div>
+<div class="bar"><a class="btn yt" style="animation:none" href="https://www.youtube.com/@Dreamstudio__18?sub_confirmation=1">▶ Subscribe</a><a class="btn ig" href="https://www.instagram.com/_dreamstudio_24">📸 Follow</a><a class="btn wa" href="https://wa.me/918435886183">💬 Chat</a></div>
+</body>
+</html>
